@@ -22,8 +22,13 @@ $('a').on('mouseleave', function(event) {
 });
 */
 
-
+/*
 $(document).on('scroll', function() {
     $('a').text($(document).scrollTop());
+});
+*/
+
+$(window).on('resize', function() {
+    $('a').text($('body').width());
 });
 
