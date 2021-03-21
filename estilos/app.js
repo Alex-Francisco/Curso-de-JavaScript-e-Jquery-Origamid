@@ -29,3 +29,6 @@ console.log('Height: ' + height,
             ' Inner: ' + innerHeight,
             ' Outer: ' + outerHeight,
             ' Outter + Margin: ' + outerHeightMargin);
+
+var windowHeight = $(window).height();
+console.log(windowHeight);
