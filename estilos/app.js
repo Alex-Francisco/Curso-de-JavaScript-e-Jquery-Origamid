@@ -5,6 +5,6 @@ var bg = $('.btn').css('background');
 console.log(bg);
 
 $('.modal').css({
-    'background-color': 'black',
-    'color': 
+    'background-color': '#ccc',
+    'width': '200px'
 });
