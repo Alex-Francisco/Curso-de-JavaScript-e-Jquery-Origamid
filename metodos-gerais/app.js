@@ -9,3 +9,4 @@ $('#botao').click(function() {
 $('.btn').click(function(){
     $('input, #botao').remove();
 });
+
