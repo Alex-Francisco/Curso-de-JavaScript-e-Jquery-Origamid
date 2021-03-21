@@ -18,3 +18,14 @@ $(document).scroll(function() {
 
 var width = $('.modal').width();
 console.log(width);
+
+var modal = $('.modal'),
+    height = modal.height(), // height
+    innerHeight = modal.innerHeight(), // + padding
+    outerHeight = modal.outerHeight(), // + border
+    outerHeightMargin = modal.outerHeight(true); // + Margin
+
+console.log('Height: ' + height,
+            ' Inner: ' + innerHeight,
+            ' Outer: ' + outerHeight,
+            ' Outter + Margin: ' + outerHeightMargin);
