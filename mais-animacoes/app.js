@@ -16,6 +16,7 @@ $('.abrir-modal').click(function(){
 });
 */
 
+/*
 $('.btn').click(function(){
     $('.modal').slideUp();
 });
@@ -23,4 +24,10 @@ $('.btn').click(function(){
 $('.abrir-modal').click(function(){
     $('.modal').slideDown();
 })
+*/
 
+$('a').click(function(){
+    $('.modal').slideToggle(function(){
+        $('a').css('margin', '50px');
+    });
+});
