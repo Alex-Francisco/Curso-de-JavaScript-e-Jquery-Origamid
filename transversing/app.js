@@ -1,3 +1,4 @@
+/*
 $('a').each(function(){
     $(this).click(function(e){
         e.preventDefault()
@@ -16,3 +17,8 @@ $('h2').click(function(){
 $('section').click(function(){
     $(this).find('p').css('background', 'blue');
 });
+*/
+$('.btn').first().css('background', 'blue');
+$('.btn').last().css('background', 'red');
+$('.btn').prev().css('background', 'pink');
+$('a').eq(0).css('background', 'green');
