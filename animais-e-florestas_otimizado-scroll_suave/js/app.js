@@ -24,7 +24,7 @@ $('[data-group]').each(function(){
 
 
 
-$('.menu-nav a').click(function(e){
+$('.menu-nav a[href^="#"]').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('href'),
 		menuHeight = $('.menu').innerHeight(),
@@ -34,3 +34,10 @@ $('.menu-nav a').click(function(e){
 		scrollTop: targetOffset - menuHeight
 	}, 500);
 });
+
+$('.logo').click(function(e){
+	e.preventDefault();
+	$('html, body').animate({
+		scrollTop: 0
+	}, 500);
+})
