@@ -19,3 +19,18 @@ $('[data-group]').each(function(){
 		$(this).addClass(activeClass);
 	});
 });
+
+
+
+
+
+$('.menu-nav a').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('href'),
+		menuHeight = $('.menu').innerHeight(),
+		targetOffset = $(id).offset().top;
+	
+	$('html, body').animate({
+		scrollTop: targetOffset - menuHeight
+	}, 500);
+});
