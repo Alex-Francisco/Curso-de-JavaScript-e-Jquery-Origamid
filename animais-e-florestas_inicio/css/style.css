@@ -29,6 +29,12 @@ ul li a {
 	letter-spacing: 2px;
 }
 
+ul li a.active {
+	background: #56cc9d;
+	color: white;
+	border-color: #56cc9d;
+}
+
 h1, h2, h3 {
 	font-family: 'Playfair Display';
 	font-weight: 900;
